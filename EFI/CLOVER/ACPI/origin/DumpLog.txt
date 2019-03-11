@@ -1,0 +1,138 @@
+2:581  0:620  Found BIOS RSDP at F0010
+2:581  0:000  Printing ACPI tables from RSDP F0010 ...
+2:581  0:000   F0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+2:581  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+2:581  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+2:581  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+2:581  0:000    Tables in Xsdt: 16
+2:581  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+2:581  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+2:581  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:583  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+2:583  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:583  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:583  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:583  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:583  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:583  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:583  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:583  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:583  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:583  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:583  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:583  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:583  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:583  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:583  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:583  0:000    Tables in Rsdt: 16
+2:583  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+2:583  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+2:583  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:585  0:002        D96C8F40: 'FACS', Ver: 0, Len: 64
+2:585  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:585  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:585  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:585  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:585  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:585  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:585  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:585  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:585  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:585  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:585  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:585  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:585  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:585  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:585  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:585  0:000  Found UEFI Acpi 2.0 RSDP at D8984000
+2:585  0:000  Saving ACPI tables from RSDP D8984000 to EFI\CLOVER\ACPI\origin ...
+2:585  0:000   D8984000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+2:585  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+2:585  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+2:585  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+2:585  0:000    Tables in Xsdt: 16
+2:585  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+2:585  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+2:585  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:587  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+2:587  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:587  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:587  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:587  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:587  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:587  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:587  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:587  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:587  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:587  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:587  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:587  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:587  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:587  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:587  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:587  0:000    Tables in Rsdt: 16
+2:587  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+2:587  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+2:587  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:589  0:001        D96C8F40: 'FACS', Ver: 0, Len: 64
+2:589  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:589  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:589  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:589  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:589  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:589  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:589  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:589  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:589  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:589  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:589  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:589  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:589  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:589  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:589  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:589  0:000  Found UEFI Acpi 1.0 RSDP at D8984000
+2:589  0:000  Printing ACPI tables from RSDP D8984000 ...
+2:589  0:000   D8984000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+2:589  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+2:589  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+2:589  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+2:589  0:000    Tables in Xsdt: 16
+2:589  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+2:589  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+2:589  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:591  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+2:591  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:591  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:591  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:591  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:591  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:591  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:591  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:591  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:591  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:591  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:591  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:591  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:591  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:591  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:591  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:591  0:000    Tables in Rsdt: 16
+2:591  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+2:591  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+2:591  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:592  0:001        D96C8F40: 'FACS', Ver: 0, Len: 64
+2:592  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:592  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:592  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:592  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:592  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:592  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:592  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:593  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:593  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:593  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:593  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:593  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:593  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:593  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:593  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56

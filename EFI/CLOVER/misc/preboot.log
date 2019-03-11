@@ -1,0 +1,804 @@
+0:100  0:100  MemLog inited, TSC freq: 1995376687
+0:100  0:000  CPU was calibrated with ACPI PM Timer
+0:100  0:000  
+0:100  0:000  Now is 11.3.2019,  3:58:22 (GMT)
+0:100  0:000  Starting Clover revision: 4895 on American Megatrends EFI
+0:100  0:000  Build with: [Args: -nb -mc --no-usb -D NO_GRUB_DRIVERS_EMBEDDED | -D DISABLE_USB_SUPPORT -D NO_GRUB_DRIVERS_EMBEDDED -D USE_BIOS_BLOCKIO -D USE_LOW_EBDA -D HAVE_LEGACY_EMURUNTIMEDXE -a X64 -b RELEASE -t XCODE8 -n 5 | OS: 10.13.6 | XCODE: 10.1]
+0:100  0:000  SelfDevicePath=PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,784107CC-6A33-4572-86E7-340E1AB055BA,0x28,0x64000) @CC9E3198
+0:100  0:000  SelfDirPath = \EFI\BOOT
+0:100  0:000  === [ Get Smbios ] ========================================
+0:100  0:000  Type 16 Index = 0
+0:100  0:000  Total Memory Slots Count = 2
+0:100  0:000  Type 17 Index = 0
+0:100  0:000  SmbiosTable.Type17->Speed = 1600MHz
+0:100  0:000  SmbiosTable.Type17->Size = 4096MB
+0:100  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 ChannelA-DIMM0
+0:100  0:000  SmbiosTable.Type17->Vendor = Samsung
+0:100  0:000  SmbiosTable.Type17->SerialNumber = 22698937
+0:100  0:000  SmbiosTable.Type17->PartNumber = M471B5173QH0-YK0  
+0:100  0:000  Type 17 Index = 1
+0:100  0:000  SmbiosTable.Type17->Speed = 1600MHz
+0:100  0:000  SmbiosTable.Type17->Size = 4096MB
+0:100  0:000  SmbiosTable.Type17->Bank/Device = BANK 2 ChannelB-DIMM0
+0:100  0:000  SmbiosTable.Type17->Vendor = Samsung
+0:100  0:000  SmbiosTable.Type17->SerialNumber = 37C3AED0
+0:100  0:000  SmbiosTable.Type17->PartNumber = M471B5173DB0-YK0  
+0:100  0:000  Boot status=0
+0:100  0:000  Running on: '10AY001TUS' with board 'SHARKBAY'
+0:100  0:000  === [ GetCPUProperties ] ==================================
+0:100  0:000  CPU Vendor = 756E6547 Model=306C3
+0:100  0:000   The CPU supported SSE4.1
+0:100  0:000  BrandString = Intel(R) Core(TM) i7-4765T CPU @ 2.00GHz
+0:100  0:000   The CPU supported turbo
+0:100  0:000  MSR 0x35               40008
+0:100  0:000  MSR 0xE2 before patch 1E008402
+0:100  0:000  MSR 0xE2 is locked, PM patches will be turned on
+0:100  0:000  MSR 0xCE              00080838_F3011400
+0:100  0:000  corrected FLEX_RATIO = 0
+0:100  0:000  MSR 0x1B0             00000000
+0:100  0:000  FSBFrequency = 100 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+0:100  0:000  MaxDiv/MinDiv: 20.0/8
+0:100  0:000  Turbo: 26/27/29/30
+0:100  0:000  Features: 0xBFEBFBFF
+0:100  0:000  Threads: 8
+0:100  0:000  Cores: 4
+0:100  0:000  FSB: 100 MHz
+0:100  0:000  CPU: 2000 MHz
+0:100  0:000  TSC: 2000 MHz
+0:100  0:000  PIS: 100 MHz
+0:100  0:000  ExternalClock: 25 MHz
+0:100  0:000  === [ GetDevices ] ========================================
+0:100  0:000  PCI (00|00:00.00) : 8086 0C00 class=060000
+0:100  0:000  PCI (00|00:02.00) : 8086 0412 class=030000
+0:100  0:000   - GFX: Model=Intel HD Graphics 4600 (Intel)
+0:100  0:000  PCI (00|00:03.00) : 8086 0C0C class=040300
+0:100  0:000  PCI (00|00:14.00) : 8086 8C31 class=0C0330
+0:100  0:000  PCI (00|00:16.00) : 8086 8C3A class=078000
+0:100  0:000  PCI (00|00:16.01) : FFFF FFFF class=FFFFFF
+0:100  0:000  PCI (00|00:19.00) : 8086 153B class=020000
+0:100  0:000   - LAN: 0 Vendor=Intel
+0:100  0:000  PCI (00|00:1A.00) : 8086 8C2D class=0C0320
+0:100  0:000  PCI (00|00:1B.00) : 8086 8C20 class=040300
+0:100  0:000  PCI (00|00:1C.00) : 8086 8C10 class=060400
+0:100  0:000  PCI (00|00:1C.03) : 8086 8C16 class=060400
+0:100  0:000  PCI (00|02:00.00) : 8086 0895 class=028000
+0:100  0:000   - WIFI: Vendor=Intel
+0:100  0:000  PCI (00|00:1D.00) : 8086 8C26 class=0C0320
+0:100  0:000  PCI (00|00:1F.00) : 8086 8C5C class=060100
+0:100  0:000  PCI (00|00:1F.02) : 8086 8C02 class=010601
+0:100  0:000  PCI (00|00:1F.03) : 8086 8C22 class=0C0500
+0:100  0:000  PCI (00|00:1F.06) : FFFF FFFF class=FFFFFF
+0:100  0:000  === [ GetDefaultSettings ] ================================
+0:100  0:000  Clover load options size = 0 bytes
+0:105  0:005  EFI\CLOVER\config.plist loaded: Success
+0:108  0:003  === [ GetListOfThemes ] ===================================
+0:109  0:000  - [00]: EMBEDDED
+0:110  0:001  - [00]: RANDOM
+0:111  0:001  === [ Found config plists ] ===============================
+0:111  0:000  - config.plist
+0:111  0:000  === [ GetEarlyUserSettings ] ==============================
+0:111  0:000  timeout set to 5
+0:111  0:000  Custom boot CUSTOM_BOOT_DISABLED (0x0)
+0:111  0:000  KextsToPatch: 4 requested
+0:111  0:000   - [00]: com.apple.driver.usb.AppleUSBXHCI (Port limit increase) :: MatchOS: 10.12.x :: BinPatch :: data len: 7
+0:112  0:000   - [01]: com.apple.driver.usb.AppleUSBXHCI (Port limit increase (RehabMan)) :: MatchOS: 10.13.x :: BinPatch :: data len: 10
+0:112  0:000   - [02]: com.apple.driver.usb.AppleUSBXHCI (Port limit increase (Ricky)) :: MatchOS: 10.14.x :: BinPatch :: data len: 9
+0:112  0:000   - [03]: AppleAHCIPort (External Icons Patch) :: BinPatch :: data len: 8
+0:112  0:000  KernelToPatch: 3 requested
+0:112  0:000   - [00]: Infinite loop at wake :: MatchOS: 10.11 :: data len: 8
+0:112  0:000   - [01]: Disable panic kext logging on 10.14 Release kernel :: MatchOS: 10.14 :: data len: 6
+0:112  0:000   - [02]: Disable panic kext logging on 10.13 Release kernel :: MatchOS: 10.13 :: data len: 6
+0:112  0:000  Default theme: embedded
+0:112  0:000  === [ LoadDrivers ] =======================================
+0:112  0:000  Loading ApfsDriverLoader-64.efi  status=Success
+0:113  0:001   - driver needs connecting
+0:113  0:000  Loading AptioMemoryFix-64.efi  status=Success
+0:115  0:001  Loading FSInject-64.efi  status=Success
+0:116  0:000  Loading VBoxHfs-64.efi  status=Success
+0:117  0:001   - driver needs connecting
+0:117  0:000  2 drivers needs connecting ...
+0:117  0:000  PlatformDriverOverrideProtocol->GetDriver overriden
+0:117  0:000  APFS driver loaded
+0:117  0:000  Searching for invalid DiskIo BY_DRIVER connects: not found, all ok
+0:442  0:325  === [ InitScreen ] ========================================
+0:442  0:000  Console modes reported: 4, available modes:
+0:442  0:000   - [01]: 80x25 (current mode)
+0:442  0:000   - [02]: 80x50
+0:442  0:000   - [03]: 100x31
+0:442  0:000   - [04]: 240x56
+0:442  0:000  SetScreenResolution: 1920x1080 - already set
+0:442  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,784107CC-6A33-4572-86E7-340E1AB055BA,0x28,0x64000)
+0:443  0:000  Using embedded font: Success
+0:444  0:000  === [ GetMacAddress ] =====================================
+0:444  0:000  MAC address of LAN #0= 00:23:24:71:D5:EF:
+0:444  0:000  === [ ScanSPD ] ===========================================
+0:444  0:000  Scanning SMBus [8086:8C22], mmio: 0xF7D39004, ioport: 0x580, hostc: 0x1
+0:462  0:018  Slot: 0 Type 24 4096MB 1600MHz Vendor=Samsung PartNo=M471B5173QH0-YK0 SerialNo=0202060908090307
+0:481  0:018  Slot: 2 Type 24 4096MB 1600MHz Vendor=Samsung PartNo=M471B5173DB0-YK0 SerialNo=03070C030A0E0D00
+0:484  0:002  === [ GetAcpiTablesList ] =================================
+0:487  0:003  Get Acpi Tables List from RSDT:
+0:487  0:000   - [00]: FACP  TC-FH    len=132
+0:487  0:000   - [01]: APIC  TC-FH    len=146
+0:487  0:000   - [02]: FPDT  TC-FH    len=68
+0:487  0:000   - [03]: FIDT  TC-FH    len=156
+0:487  0:000   - [04]: ASF!  TC-FH    len=165
+0:487  0:000   - [05]: DBGP  TC-FH    len=52
+0:487  0:000   - [06]: MSDM  TC-FH    len=85
+0:487  0:000   - [07]: SSDT  TC-FH    len=1271
+0:487  0:000   - [08]: SSDT  TC-FH    len=2776
+0:487  0:000   - [09]: MCFG  TC-FH    len=60
+0:487  0:000   - [10]: SLIC  TC-FH    len=374
+0:487  0:000   - [11]: HPET  TC-FH    len=56
+0:487  0:000   - [12]: SSDT  TC-FH    len=877
+0:487  0:000   - [13]: SSDT  TC-FH    len=13608
+0:487  0:000   - [14]: LUFT  TC-FH    len=207330
+0:487  0:000   - [15]: BGRT  TC-FH    len=56
+0:487  0:000  Calibrated TSC Frequency = 1995376687 = 1995MHz
+0:487  0:000  === [ GetUserSettings ] ===================================
+0:487  0:000  Add 2 devices:
+0:487  0:000  USB FixOwnership: yes
+0:487  0:000  Dropping 2 tables:
+0:487  0:000   - [00]: Drop table  signature="DMAR" (52414D44)
+0:487  0:000           - set table: 52414D44,                0 to drop: no
+0:487  0:000   - [01]: Drop table  signature="MATS" (5354414D)
+0:487  0:000           - set table: 5354414D,                0 to drop: no
+0:487  0:000   - final DSDT Fix mask=000C005C
+0:487  0:000  PatchesDSDT: 5 requested
+0:487  0:000   - [00]: (change EHC1 to EH01) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:487  0:000   - [01]: (change EHC2 to EH02) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:487  0:000   - [02]: (change SAT0 to SATA) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:487  0:000   - [03]: (change XHCI to XHC) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:487  0:000   - [04]: (change XHC1 to XHC) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:487  0:000  Devices to rename 1
+0:487  0:000  PXSX:RP01:PCI0:#_SB:->will be renamed to ARPT
+0:487  0:000  Using ProductName from config: MacMini7,1
+0:487  0:000  BiosVersion: not set, Using BiosVersion from clover
+0:487  0:000  BiosVersion: IM131.88Z.F000.B00.1812191041
+0:487  0:000  BiosReleaseDate: 12/19/2018
+0:487  0:000  Using EfiVersion from clover: 282.0.0.0.0
+0:487  0:000  Using FirmwareFeatures from clover: 0xE00DE137
+0:487  0:000  Using FirmwareFeaturesMask from clover: 0xFF1FFF3F
+0:487  0:000  Using PlatformFeature from clover: 0x1
+0:488  0:000  === [ Found DSDT tables ] =================================
+0:611  0:122  === [ ScanVolumes ] =======================================
+0:611  0:000  Found 7 volumes with blockIO
+0:611  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)
+0:611  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,784107CC-6A33-4572-86E7-340E1AB055BA,0x28,0x64000)
+0:612  0:000          Result of bootcode detection: bootable unknown (legacy)
+0:619  0:007          This is SelfVolume !!
+0:619  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,667D3052-D568-43A4-A309-30D7C51C377D,0x64028,0x1DC8F260)
+0:620  0:000          Result of bootcode detection: bootable unknown (legacy)
+0:620  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,667D3052-D568-43A4-A309-30D7C51C377D,0x64028,0x1DC8F260)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,F14D5CFE9DFA0D4BB9E3D48104D9FDEF)
+0:620  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,667D3052-D568-43A4-A309-30D7C51C377D,0x64028,0x1DC8F260)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C6BA2B5B01247948A070FD0B34EBECDE)
+0:620  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,667D3052-D568-43A4-A309-30D7C51C377D,0x64028,0x1DC8F260)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,F4A8C20F3D48FB40A380206A98196BD1)
+0:620  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,667D3052-D568-43A4-A309-30D7C51C377D,0x64028,0x1DC8F260)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,DCB8F254A6AC7B4AA505C531DF381F38)
+0:620  0:000  No AudioIoProtocols, status=Not Found
+0:620  0:000  === [ InitTheme ] =========================================
+0:620  0:000  use night theme
+0:620  0:000   using embedded theme
+0:620  0:000  got embedded sound
+0:620  0:000    Channels: 2  Sample rate: 8000 Hz  Bits: 16
+0:620  0:000  output to channel 0 with volume 70, len=25600
+0:620  0:000   sound channels=2 bits=16 freq=8000
+0:620  0:000  sound converted to 48kHz
+0:620  0:000  not found AudioIo to play
+0:620  0:000  sound play end with status=C42722B4
+0:621  0:000  Using embedded font: Success
+0:621  0:000  theme inited
+0:621  0:000  Chosen embedded theme
+0:621  0:000  after NVRAM boot-args=-v dart=0 debug=0x100 shikigva=40 keepsyms=1
+0:621  0:000  === [ Dump SMC keys from NVRAM ] ==========================
+0:621  0:000  no AppleSMC protocol
+0:628  0:007  === [ ScanLoader ] ========================================
+0:628  0:000  - [01]: 'EFI'
+0:630  0:001          AddLoaderEntry for Volume Name=EFI
+0:630  0:000          skipped because entry is hidden
+0:630  0:000  - [03]: 'Preboot'
+0:634  0:004          AddLoaderEntry for Volume Name=Preboot
+0:639  0:004      Check if volume Is Hibernated:
+0:639  0:000      Check sleep image 'by signature':
+0:639  0:000      using default sleep image name = \private\var\vm\sleepimage
+0:639  0:000      sleepimage not found -> Not Found
+0:639  0:000      hibernated: no - sign
+0:642  0:002          AddLoaderEntry for Volume Name=Preboot
+0:652  0:009  - [04]: 'Macintosh HD'
+0:700  0:048          AddLoaderEntry for Volume Name=Macintosh HD
+0:712  0:011      Check if volume Is Hibernated:
+0:712  0:000      Check sleep image 'by signature':
+0:728  0:016      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+0:728  0:000      using default sleep image name = \private\var\vm\sleepimage
+0:737  0:008      sleepimage not found -> Not Found
+0:737  0:000      hibernated: no - sign
+0:750  0:013  - [05]: 'Recovery'
+0:753  0:002          AddLoaderEntry for Volume Name=Recovery
+0:762  0:008  - [06]: 'VM'
+0:762  0:000  Scanning legacy ...
+0:762  0:000  === [ AddCustomTool ] =====================================
+0:765  0:002  found tool \EFI\CLOVER\tools\Shell64U.efi
+0:765  0:000  Checking EFI partition Volume 1 for Clover
+0:765  0:000   Found Clover
+0:766  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+0:766  0:000   - efi-boot-device-data: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,667D3052-D568-43A4-A309-30D7C51C377D,0x64028,0x1DC8F260)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C6BA2B5B01247948A070FD0B34EBECDE)
+0:766  0:000    - Volume: 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,667D3052-D568-43A4-A309-30D7C51C377D,0x64028,0x1DC8F260)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C6BA2B5B01247948A070FD0B34EBECDE)'
+0:766  0:000    - LoaderPath: '<null string>'
+0:766  0:000    - Guid = 667D3052-D568-43A4-A309-30D7C51C377D
+0:766  0:000  === [ FindStartupDiskVolume ] =============================
+0:766  0:000    - Volume: partition = PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,667D3052-D568-43A4-A309-30D7C51C377D,0x64028,0x1DC8F260)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C6BA2B5B01247948A070FD0B34EBECDE)
+0:766  0:000     - searching for that partition
+0:766  0:000      - found entry 2. 'Boot macOS from Macintosh HD', Volume 'Macintosh HD'
+0:766  0:000  Boot redirected to Entry 2. 'Boot macOS from Macintosh HD'
+0:766  0:000  DefaultIndex=2 and MainMenu.EntryCount=10
+0:865  0:098  GUI ready
+1:176  0:310  Found BIOS RSDP at F0010
+1:176  0:000  Printing ACPI tables from RSDP F0010 ...
+1:176  0:000   F0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+1:176  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+1:176  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+1:176  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+1:176  0:000    Tables in Xsdt: 16
+1:176  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+1:176  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+1:176  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:178  0:002        D96C8F80: 'FACS', Ver: 2, Len: 64
+1:178  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:178  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:178  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:178  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:178  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:178  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:178  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:178  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:178  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:178  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:178  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:178  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:178  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:178  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:178  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:178  0:000    Tables in Rsdt: 16
+1:178  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+1:178  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+1:178  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:180  0:001        D96C8F40: 'FACS', Ver: 0, Len: 64
+1:180  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:180  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:180  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:180  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:180  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:180  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:180  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:180  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:180  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:180  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:180  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:180  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:180  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:180  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:180  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:180  0:000  Found UEFI Acpi 2.0 RSDP at D8984000
+1:180  0:000  Saving ACPI tables from RSDP D8984000 to EFI\CLOVER\ACPI\origin ...
+1:180  0:000   D8984000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+1:190  0:010    (Xsdt: D8984090, Rsdt: D8984028)
+1:190  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164 -> XSDT.aml
+1:196  0:005    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100 -> RSDT.aml
+1:200  0:004    Tables in Xsdt: 16
+1:200  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268 -> FACP.aml
+1:204  0:004        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+1:204  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986 -> DSDT.aml
+1:220  0:016        D96C8F80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+1:225  0:004    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146 -> APIC.aml
+1:229  0:004    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68 -> FPDT.aml
+1:234  0:004    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156 -> FIDT.aml
+1:238  0:004    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165 -> ASF!.aml
+1:242  0:004    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52 -> DBGP.aml
+1:246  0:004    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85 -> MSDM.aml
+1:251  0:004    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271 -> SSDT-0-TC-FH.aml
+1:255  0:004    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776 -> SSDT-1-TC-FH.aml (Found hidden SSDT 4 pcs)
+1:259  0:004        * D7540A98: '$', '', Rev: 0, Len: 23117  24 05 00 10 4D 5A 00 00 00 00 00 00 00 00 00 00 
+1:259  0:000        * D891B618: 'SSDT', 'ApIst', Rev: 1, Len: 1450  53 53 44 54 AA 05 00 00 01 D3 50 6D 52 65 66 00 Internal length = 1450 -> SSDT-x1_0-ApIst.aml
+1:264  0:004        * D891BC18: 'SSDT', 'Cpu0Cst', Rev: 1, Len: 979  53 53 44 54 D3 03 00 00 01 B3 50 6D 52 65 66 00 Internal length = 979 -> SSDT-x1_1-Cpu0Cst.aml
+1:268  0:004        * D891AD98: 'SSDT', 'ApCst', Rev: 1, Len: 281  53 53 44 54 19 01 00 00 01 EF 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x1_2-ApCst.aml
+1:272  0:004  
+1:272  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60 -> MCFG.aml
+1:277  0:004    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374 -> SLIC.aml
+1:281  0:004    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56 -> HPET.aml
+1:285  0:004    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877 -> SSDT-2-TC-FH.aml
+1:290  0:004    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608 -> SSDT-3-TC-FH.aml
+1:297  0:006    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330 -> LUFT.aml
+1:316  0:018    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56 -> BGRT.aml
+1:320  0:004    Tables in Rsdt: 16
+1:320  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132 -> RSDT-FACP.aml
+1:324  0:004        (Dsdt: D89841C8, Facs: D96C8F40)
+1:324  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:326  0:001        D96C8F40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+1:330  0:004    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:330  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:330  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:330  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:330  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:330  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:330  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:330  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:330  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:330  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:330  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:330  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:330  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:330  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:330  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:330  0:000  Found UEFI Acpi 1.0 RSDP at D8984000
+1:330  0:000  Printing ACPI tables from RSDP D8984000 ...
+1:330  0:000   D8984000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+1:330  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+1:330  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+1:330  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+1:330  0:000    Tables in Xsdt: 16
+1:330  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+1:330  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+1:330  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:332  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+1:332  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:332  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:332  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:332  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:332  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:332  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:332  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:332  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:332  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:332  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:332  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:332  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:332  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:332  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:332  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:332  0:000    Tables in Rsdt: 16
+1:332  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+1:332  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+1:332  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:334  0:001        D96C8F40: 'FACS', Ver: 0, Len: 64
+1:334  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:334  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:334  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:334  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:334  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:334  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:334  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:334  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:334  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:334  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:334  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:334  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:334  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:334  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:334  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:949  0:615  Found BIOS RSDP at F0010
+1:949  0:000  Printing ACPI tables from RSDP F0010 ...
+1:949  0:000   F0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+1:949  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+1:949  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+1:949  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+1:949  0:000    Tables in Xsdt: 16
+1:949  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+1:949  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+1:949  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:951  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+1:951  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:951  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:951  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:951  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:951  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:951  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:951  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:951  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:951  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:951  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:951  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:951  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:951  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:951  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:951  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:951  0:000    Tables in Rsdt: 16
+1:951  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+1:951  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+1:951  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:953  0:002        D96C8F40: 'FACS', Ver: 0, Len: 64
+1:953  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:953  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:953  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:953  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:953  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:953  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:953  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:953  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:953  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:953  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:953  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:953  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:953  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:953  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:953  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:953  0:000  Found UEFI Acpi 2.0 RSDP at D8984000
+1:953  0:000  Saving ACPI tables from RSDP D8984000 to EFI\CLOVER\ACPI\origin ...
+1:953  0:000   D8984000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+1:953  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+1:953  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+1:953  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+1:953  0:000    Tables in Xsdt: 16
+1:953  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+1:953  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+1:953  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:955  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+1:955  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:955  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:955  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:955  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:955  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:955  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:955  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:955  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:955  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:955  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:955  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:955  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:955  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:955  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:955  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:955  0:000    Tables in Rsdt: 16
+1:955  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+1:955  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+1:955  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:957  0:001        D96C8F40: 'FACS', Ver: 0, Len: 64
+1:957  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:957  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:957  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:957  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:957  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:957  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:957  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:957  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:957  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:957  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:957  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:957  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:957  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:957  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:957  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:957  0:000  Found UEFI Acpi 1.0 RSDP at D8984000
+1:957  0:000  Printing ACPI tables from RSDP D8984000 ...
+1:957  0:000   D8984000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+1:957  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+1:957  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+1:957  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+1:957  0:000    Tables in Xsdt: 16
+1:957  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+1:957  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+1:957  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:959  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+1:959  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:959  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:959  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:959  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:959  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:959  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:959  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:959  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:959  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:959  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:959  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:959  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:959  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:959  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:959  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+1:959  0:000    Tables in Rsdt: 16
+1:959  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+1:959  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+1:959  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+1:960  0:001        D96C8F40: 'FACS', Ver: 0, Len: 64
+1:960  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+1:960  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+1:960  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+1:960  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+1:960  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+1:960  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+1:960  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+1:960  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+1:960  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+1:960  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+1:960  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+1:960  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+1:961  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+1:961  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+1:961  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:581  0:620  Found BIOS RSDP at F0010
+2:581  0:000  Printing ACPI tables from RSDP F0010 ...
+2:581  0:000   F0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+2:581  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+2:581  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+2:581  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+2:581  0:000    Tables in Xsdt: 16
+2:581  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+2:581  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+2:581  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:583  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+2:583  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:583  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:583  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:583  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:583  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:583  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:583  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:583  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:583  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:583  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:583  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:583  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:583  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:583  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:583  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:583  0:000    Tables in Rsdt: 16
+2:583  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+2:583  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+2:583  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:585  0:002        D96C8F40: 'FACS', Ver: 0, Len: 64
+2:585  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:585  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:585  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:585  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:585  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:585  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:585  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:585  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:585  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:585  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:585  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:585  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:585  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:585  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:585  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:585  0:000  Found UEFI Acpi 2.0 RSDP at D8984000
+2:585  0:000  Saving ACPI tables from RSDP D8984000 to EFI\CLOVER\ACPI\origin ...
+2:585  0:000   D8984000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+2:585  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+2:585  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+2:585  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+2:585  0:000    Tables in Xsdt: 16
+2:585  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+2:585  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+2:585  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:587  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+2:587  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:587  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:587  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:587  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:587  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:587  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:587  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:587  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:587  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:587  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:587  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:587  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:587  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:587  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:587  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:587  0:000    Tables in Rsdt: 16
+2:587  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+2:587  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+2:587  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:589  0:001        D96C8F40: 'FACS', Ver: 0, Len: 64
+2:589  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:589  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:589  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:589  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:589  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:589  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:589  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:589  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:589  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:589  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:589  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:589  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:589  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:589  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:589  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:589  0:000  Found UEFI Acpi 1.0 RSDP at D8984000
+2:589  0:000  Printing ACPI tables from RSDP D8984000 ...
+2:589  0:000   D8984000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+2:589  0:000    (Xsdt: D8984090, Rsdt: D8984028)
+2:589  0:000    D8984090: 'XSDT', 'TC-FH', Rev: 1, Len: 164
+2:589  0:000    D8984028: 'RSDT', 'TC-FH', Rev: 1, Len: 100
+2:589  0:000    Tables in Xsdt: 16
+2:589  0:000    0. D89991B0: 'FACP', 'TC-FH', Rev: 5, Len: 268
+2:589  0:000        (Dsdt: D89841C8, Facs: D96C8F80, XDsdt: D89841C8, XFacs: 0)
+2:589  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:591  0:001        D96C8F80: 'FACS', Ver: 2, Len: 64
+2:591  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:591  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:591  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:591  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:591  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:591  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:591  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:591  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:591  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:591  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:591  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:591  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:591  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:591  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:591  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+2:591  0:000    Tables in Rsdt: 16
+2:591  0:000    0. D8984140: 'FACP', 'TC-FH', Rev: 2, Len: 132
+2:591  0:000        (Dsdt: D89841C8, Facs: D96C8F40)
+2:591  0:000        D89841C8: 'DSDT', 'TC-FH', Rev: 2, Len: 85986
+2:592  0:001        D96C8F40: 'FACS', Ver: 0, Len: 64
+2:592  0:000    1. D89992C0: 'APIC', 'TC-FH', Rev: 3, Len: 146
+2:592  0:000    2. D8999358: 'FPDT', 'TC-FH', Rev: 1, Len: 68
+2:592  0:000    3. D89993A0: 'FIDT', 'TC-FH', Rev: 1, Len: 156
+2:592  0:000    4. D8999440: 'ASF!', 'TC-FH', Rev: 32, Len: 165
+2:592  0:000    5. D89994E8: 'DBGP', 'TC-FH', Rev: 1, Len: 52
+2:592  0:000    6. D8999520: 'MSDM', 'TC-FH', Rev: 3, Len: 85
+2:592  0:000    7. D8999578: 'SSDT', 'TC-FH', Rev: 1, Len: 1271
+2:593  0:000    8. D8999A70: 'SSDT', 'TC-FH', Rev: 1, Len: 2776
+2:593  0:000    9. D899A548: 'MCFG', 'TC-FH', Rev: 1, Len: 60
+2:593  0:000    10. D899A588: 'SLIC', 'TC-FH', Rev: 1, Len: 374
+2:593  0:000    11. D899A700: 'HPET', 'TC-FH', Rev: 1, Len: 56
+2:593  0:000    12. D899A738: 'SSDT', 'TC-FH', Rev: 1, Len: 877
+2:593  0:000    13. D899AAA8: 'SSDT', 'TC-FH', Rev: 1, Len: 13608
+2:593  0:000    14. D899DFD0: 'LUFT', 'TC-FH', Rev: 1, Len: 207330
+2:593  0:000    15. D89D09B8: 'BGRT', 'TC-FH', Rev: 0, Len: 56
+5:138  2:545  Boot option Boot0000 not found
+5:138  0:000  === [ StartLoader ] =======================================
+5:138  0:000  Finally: ExternalClock=25MHz BusSpeed=99769kHz CPUFreq=1995MHz PIS: hw.busfrequency=100000000Hz
+5:138  0:000  Loading boot.efi  status=Success
+5:227  0:088  GetOSVersion: 10.14.3 (18D109)
+5:227  0:000  CSR_CFG: CSR_ALLOW_UNTRUSTED_KEXTS | CSR_ALLOW_UNRESTRICTED_FS | CSR_ALLOW_TASK_FOR_PID | CSR_ALLOW_UNRESTRICTED_DTRACE | CSR_ALLOW_UNRESTRICTED_NVRAM | CSR_ALLOW_DEVICE_CONFIGURATION | CSR_ALLOW_ANY_RECOVERY_OS | CSR_ALLOW_UNAPPROVED_KEXTS
+5:227  0:000  Filtering KextPatches:
+5:227  0:000   - [00]: com.apple.driver.usb.AppleUSBXHCI (Port limit increase) :: BinPatch :: [OS: 10.14.3 | MatchOS: 10.12.x | MatchBuild: All] ==> not allowed
+5:227  0:000   - [01]: com.apple.driver.usb.AppleUSBXHCI (Port limit increase (RehabMan)) :: BinPatch :: [OS: 10.14.3 | MatchOS: 10.13.x | MatchBuild: All] ==> not allowed
+5:227  0:000   - [02]: com.apple.driver.usb.AppleUSBXHCI (Port limit increase (Ricky)) :: BinPatch :: [OS: 10.14.3 | MatchOS: 10.14.x | MatchBuild: All] ==> allowed
+5:227  0:000   - [03]: AppleAHCIPort (External Icons Patch) :: BinPatch :: [OS: 10.14.3 | MatchOS: All | MatchBuild: All] ==> allowed
+5:227  0:000  Filtering KernelPatches:
+5:227  0:000   - [00]: Infinite loop at wake :: [OS: 10.14.3 | MatchOS: 10.11 | MatchBuild: no] ==> disabled by user
+5:227  0:000   - [01]: Disable panic kext logging on 10.14 Release kernel :: [OS: 10.14.3 | MatchOS: 10.14 | MatchBuild: no] ==> disabled by user
+5:227  0:000   - [02]: Disable panic kext logging on 10.13 Release kernel :: [OS: 10.14.3 | MatchOS: 10.13 | MatchBuild: no] ==> disabled by user
+5:227  0:000  Will not patch boot.efi
+5:227  0:000  === [ PatchSmbios ] =======================================
+5:227  0:000  insert table 9 for dev 19:0
+5:227  0:000  insert table 9 for dev 0:0
+5:228  0:000  Trusting SMBIOS...
+5:228  0:000  Detected alternating SMBIOS channel banks
+5:228  0:000  Channels: 2
+5:228  0:000  Interleave: 0 2 1 3 4 6 5 7 8 10 9 11 12 14 13 15 16 18 17 19 20 22 21 23
+5:228  0:000   partNum=M471B5173QH0-YK0  
+5:228  0:000  SMBIOS Type 17 Index = 0 => 0 0:
+5:228  0:000  BANK 0 DIMM0 1600MHz 4096MB
+5:228  0:000   partNum=M471B5173DB0-YK0  
+5:228  0:000  SMBIOS Type 17 Index = 1 => 1 2:
+5:228  0:000  BANK 1 DIMM0 1600MHz 4096MB
+5:228  0:000  mTotalSystemMemory = 8192
+5:228  0:000  NumberOfMemoryDevices = 2
+5:228  0:000  Type20[0]->End = 0x3FFFFF, Type17[0] = 0x1000
+5:228  0:000  Type20[1]->End = 0x7FFFFF, Type17[1] = 0x3000
+5:228  0:000  Table 131 is present, CPUType=301
+5:228  0:000  Change to: 705
+5:228  0:000  Table 133 is present, PlatformFeature=4F484B01
+5:228  0:000  Change to: 1
+5:228  0:000  === [ PatchACPI ] =========================================
+5:228  0:000  Xsdt reallocation done
+5:228  0:000  old FADT length=10C
+5:228  0:000   SignatureFixup: 0x9D463ED2 -> 0x0
+5:229  0:000  Apply DsdtFixMask=0x000C005C
+5:229  0:000     drop _DSM mask=0xFFFF
+5:229  0:000  === [ FixBiosDsdt ] =======================================
+5:229  0:000  Patching DSDT:
+5:229  0:000   - [change EHC1 to EH01]: pattern 45484331, patched at: [ (569C) (5A82) (F) (10) ]
+5:229  0:000   - [change EHC2 to EH02]: pattern 45484332, patched at: [ (5C26) (5533) (F) (10) ]
+5:229  0:000   - [change SAT0 to SATA]: pattern 53415430, patched at: [ (7621) (23) (2E) (12) (2D5A) (35) (172) (1B) (21) (21) (21) (13D) (29) (2E) (2E) (2E) (E5) ]
+5:229  0:000   - [change XHCI to XHC]: pattern 58484349, patched at: [ (5A2) (60F6) (73) (3) (49) (3) ]
+5:229  0:000   - [change XHC1 to XHC]: pattern 58484331, bin not found / already patched!
+5:229  0:000  Name: PXSX, Bridge: RP01, Replace: ARPT
+5:230  0:000    2 replacements
+5:230  0:000  found PIC had IRQNoFlag will move -3 bytes
+5:230  0:000  Start HPET Fix
+5:232  0:001  Start Add IMEI
+5:232  0:000  PreCleanup XSDT: count=16, length=164
+5:232  0:000  PreCleanup XSDT, corrected XSDT: count=16, length=164
+5:232  0:000  === [ ACPIDropTables ] ====================================
+5:232  0:000  0. [change EHC1 to EH01]: pattern 45484331, bin not found / already patched!
+5:232  0:000  1. [change EHC2 to EH02]: pattern 45484332, bin not found / already patched!
+5:232  0:000  2. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+5:232  0:000  3. [change XHCI to XHC]: pattern 58484349, bin not found / already patched!
+5:232  0:000  4. [change XHC1 to XHC]: pattern 58484331, bin not found / already patched!
+5:232  0:000  Name: PXSX, Bridge: RP01, Replace: ARPT
+5:232  0:000    0 replacements
+5:232  0:000  0. [change EHC1 to EH01]: pattern 45484331, bin not found / already patched!
+5:232  0:000  1. [change EHC2 to EH02]: pattern 45484332, bin not found / already patched!
+5:232  0:000  2. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+5:232  0:000  3. [change XHCI to XHC]: pattern 58484349, bin not found / already patched!
+5:232  0:000  4. [change XHC1 to XHC]: pattern 58484331, bin not found / already patched!
+5:232  0:000  Name: PXSX, Bridge: RP01, Replace: ARPT
+5:232  0:000    0 replacements
+5:232  0:000  Found OperationRegion(PPMT, SystemMemory, D93C4F98, ...)
+5:232  0:000  0. [change EHC1 to EH01]: pattern 45484331, bin not found / already patched!
+5:233  0:000  1. [change EHC2 to EH02]: pattern 45484332, bin not found / already patched!
+5:233  0:000  2. [change SAT0 to SATA]: pattern 53415430, patched at: [ (B5) ]
+5:233  0:000  3. [change XHCI to XHC]: pattern 58484349, bin not found / already patched!
+5:233  0:000  4. [change XHC1 to XHC]: pattern 58484331, bin not found / already patched!
+5:233  0:000  Name: PXSX, Bridge: RP01, Replace: ARPT
+5:233  0:000    0 replacements
+5:233  0:000  0. [change EHC1 to EH01]: pattern 45484331, bin not found / already patched!
+5:233  0:000  1. [change EHC2 to EH02]: pattern 45484332, bin not found / already patched!
+5:233  0:000  2. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+5:233  0:000  3. [change XHCI to XHC]: pattern 58484349, bin not found / already patched!
+5:233  0:000  4. [change XHC1 to XHC]: pattern 58484331, bin not found / already patched!
+5:233  0:000  Name: PXSX, Bridge: RP01, Replace: ARPT
+5:233  0:000    0 replacements
+5:233  0:000  Found OperationRegion(SANV, SystemMemory, D93C3E18, ...)
+5:233  0:000  Found OperationRegion(CCDC, SystemMemory, 80000000, ...)
+5:233  0:000  CPUBase=0 and ApicCPUBase=1 ApicCPUNum=8
+5:233  0:000  Maximum control=0x14
+5:233  0:000  Turbo control=0x1E
+5:233  0:000  P-States: min 0x8, max 0x1E
+5:233  0:000  SSDT with plugin-type without P-States is generated
+5:233  0:000  Cleanup XSDT: count=17, length=172
+5:233  0:000  corrected XSDT count=17, length=172
+5:233  0:000  === [ RestSetup macOS ] ===================================
+5:233  0:000  EdidDiscovered size=128
+5:233  0:000  --- Discovered EDID Table size:128
+5:233  0:000  000  |  00  FF  FF  FF  FF  FF  FF  00  4C  2D
+5:233  0:000  010  |  6D  06  00  00  00  00  30  13  01  03
+5:233  0:000  020  |  80  10  09  78  0A  EE  91  A3  54  4C
+5:233  0:000  030  |  99  26  0F  50  54  BD  EF  80  71  4F
+5:233  0:000  040  |  81  00  81  40  81  80  95  00  95  0F
+5:233  0:000  050  |  B3  00  A9  40  02  3A  80  18  71  38
+5:233  0:000  060  |  2D  40  58  2C  45  00  A0  5A  00  00
+5:233  0:000  070  |  00  1E  66  21  50  B0  51  00  1B  30
+5:233  0:000  080  |  40  70  36  00  A0  5A  00  00  00  1E
+5:233  0:000  090  |  00  00  00  FD  00  18  4B  1A  51  17
+5:233  0:000  100  |  00  0A  20  20  20  20  20  20  00  00
+5:233  0:000  110  |  00  FC  00  53  41  4D  53  55  4E  47
+5:233  0:000  120  |  0A  20  20  20  20  20  01  23
+5:233  0:000  add device: PciRoot(0x0)/Pci(0x2,0x0)
+5:233  0:000     Add key=device-id valuelen=4
+5:233  0:000     Add key=AAPL,ig-platform-id valuelen=4
+5:233  0:000  add device: PciRoot(0x0)/Pci(0x1F,0x3)
+5:233  0:000     Add key=layout-id valuelen=1
+5:233  0:000  Intel GFX injection not set
+5:233  0:000  stringlength = 1990
+5:233  0:000  CurrentMode: Width=1920 Height=1080
+5:233  0:000  Beginning FSInjection
+FSInjectionInstall ...
+- Our FSI_SIMPLE_FILE_SYSTEM_PROTOCOL installed on handle: CB679518
+FSInjectionInstall ...
+- Our FSI_SIMPLE_FILE_SYSTEM_PROTOCOL installed on handle: CB679518
+5:239  0:005  Use origin smbios table type 1 guid.
+5:240  0:001  Preparing kexts injection for arch=x86_64 from EFI\CLOVER\kexts\Other
+5:240  0:000  Extra kext: EFI\CLOVER\kexts\Other\Lilu.kext (v.1.3.4)
+5:245  0:004  Extra kext: EFI\CLOVER\kexts\Other\USBInjectAll.kext (v.0.5.8)
+5:263  0:018  Extra kext: EFI\CLOVER\kexts\Other\FakeSMC.kext (v.1765)
+5:267  0:004  Extra kext: EFI\CLOVER\kexts\Other\FakeSMC_LPCSensors.kext (v.1765)
+5:289  0:022  Extra kext: EFI\CLOVER\kexts\Other\FakeSMC_GPUSensors.kext (v.1765)
+5:296  0:006  Extra kext: EFI\CLOVER\kexts\Other\FakeSMC_CPUSensors.kext (v.1765)
+5:298  0:002  Extra kext: EFI\CLOVER\kexts\Other\FakeSMC_ACPISensors.kext (v.1765)
+5:302  0:003  Extra kext: EFI\CLOVER\kexts\Other\FakePCIID.kext (v.1.3.5)
+5:305  0:002  Extra kext: EFI\CLOVER\kexts\Other\FakePCIID_XHCIMux.kext (v.1.3.5)
+5:308  0:003  Extra kext: EFI\CLOVER\kexts\Other\FakePCIID_Intel_HDMI_Audio.kext (v.1.3.5)
+5:310  0:001  Extra kext: EFI\CLOVER\kexts\Other\FakePCIID_Intel_HD_Graphics.kext (v.1.3.5)
+5:311  0:001  Extra kext: EFI\CLOVER\kexts\Other\FakePCIID_Intel_GbX.kext (v.1.3.5)
+5:313  0:001  Extra kext: EFI\CLOVER\kexts\Other\CodecCommander.kext (v.2.6.3)
+5:317  0:004  Extra kext: EFI\CLOVER\kexts\Other\BrcmPatchRAM2.kext (v.2.2.7)
+5:332  0:014  Extra kext: EFI\CLOVER\kexts\Other\BrcmFirmwareRepo.kext (v.2.2.7)
+5:336  0:004  Extra kext: EFI\CLOVER\kexts\Other\AppleALC.kext (v.1.3.5)
+5:417  0:080  Extra kext: EFI\CLOVER\kexts\Other\AHCIPortInjector.kext (v.1.0.1)
+5:437  0:020  Extra kext: EFI\CLOVER\kexts\Other\IntelMausiEthernet.kext (v.2.2.1d1)
+5:443  0:006  Preparing kexts injection for arch=x86_64 from EFI\CLOVER\kexts\10.14
+5:444  0:001  SetStartupDiskVolume:
+5:444  0:000    * Volume: 'Macintosh HD'
+5:444  0:000    * LoaderPath: '<null string>'
+5:444  0:000    * DevPath: Macintosh HD
+5:444  0:000    * GUID = 667D3052-D568-43A4-A309-30D7C51C377D
+5:444  0:000    * efi-boot-device: <array><dict><key>IOMatch</key><dict><key>IOProviderClass</key><string>IOMedia</string><key>IOPropertyMatch</key><dict><key>UUID</key><string>667D3052-D568-43A4-A309-30D7C51C377D</string></dict></dict></dict></array>
+5:444  0:000  Custom boot screen not used because entry has unset use graphics
+5:446  0:001  Closing log
