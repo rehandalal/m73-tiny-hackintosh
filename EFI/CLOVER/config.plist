@@ -717,10 +717,10 @@
 		</dict>
 		<key>#CustomIcons</key>
 		<false/>
-		<key>#Hide</key>
+		<key>Hide</key>
 		<array>
-			<string>Windows</string>
-			<string>BOOTX64.EFI</string>
+			<string>Preboot</string>
+			<string>Recovery</string>
 		</array>
 		<key>#KbdPrevLang</key>
 		<false/>
@@ -735,7 +735,7 @@
 			<key>Speed</key>
 			<integer>2</integer>
 		</dict>
-		<key>#Scan</key>
+		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
 			<true/>
@@ -762,7 +762,7 @@
 		<key>ShowOptimus</key>
 		<false/>
 		<key>Theme</key>
-		<string>embedded</string>
+		<string>clover-theme-minimal-dark</string>
 		<key>Timezone</key>
 		<integer>3</integer>
 	</dict>
